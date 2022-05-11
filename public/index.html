@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Dice game</h1>
+      <!-- Här fyller man i sitt namn -->
+    <div id="userContainer">
+    <div id="user">
+      <form id="formUser">
+        <input type="text" id="inputUser"><button>Add your name</button>
+      </form>
+    </div>
+  </div>
+  <!-- Här skriver man i chatten och meddelanden visas upp -->
+  <div id="messageContainer">
+    <div id="message">
+      <form id="formMessage">
+        <input id="inputMessage"
+        type="text">
+        <button>Send message</button>
+      </form>
+    </div>
+  </div>
+    <div id="chatMessages">
+    <h2>Chat messages</h2>
+    <ul id="messages"></ul>
+  </div>
+    <!-- Knapp för att kasta tärningen och här visas reslutatet upp -->
+<div id="dice">
+  <button id="roll">Roll dice</button>
+  <ul id="results"></ul>
+</div>
+</div>
+
+    <script src="/socket.io/socket.io.js"></script>  <!-- Gör att man har tillgång till socket.io även på klienten. -->
+    <script src="client.js"></script>
+  </body>
+</html>

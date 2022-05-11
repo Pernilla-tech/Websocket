@@ -1,0 +1,171 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+	background-image: url('/images/dice.jpg');
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+p {
+	font-size: 20px;
+	line-height:130%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+h1 {
+	margin: 0px;
+	margin-bottom: 12px;
+}
+
+h2 {
+	margin: 0px;
+	margin-bottom: 8px;
+}
+
+a {
+	font-size: 16px;
+	color: #f90;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+  margin: 5rem 20rem;
+  padding: 1rem;
+  background-color: rgba(235, 192, 218, 0.5);
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    margin: 5rem;
+  }
+}
+
+form button {
+  background: #333;
+  border: none;
+  padding: 0.5rem;
+  margin: 1.3rem;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 0.5;
+}
+
+form button:hover {
+  background-color: rgb(34, 0, 255);
+  opacity: 1;
+  cursor: pointer;
+}
+
+form button {
+  transition-duration: 0.5s;
+}
+
+#userContainer {
+  background-color: rgba(226, 144, 193, 0.5);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#formUser {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+form input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+form input:hover {
+  cursor: pointer;
+}
+
+#messageContainer {
+  background-color: rgba(226, 144, 193, 0.5);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#formMessage {
+  flex-direction: column;
+  display: flex;
+}
+
+#chatMessages {
+  background-color: rgba(226, 144, 193, 0.5);
+  padding: 30px;
+}
+
+#messages {
+  margin: 0;
+  padding: 0;
+}
+
+#messages > li {
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  word-wrap: break-word;
+}
+
+#messages > li:nth-child(odd) {
+  background: #efefef;
+}
+
+#messages > li:nth-child(even) {
+  background: #c5eaf0;
+}
+
+#dice {
+  background-color: rgba(189, 224, 254, 0.5);
+  padding-bottom: 1rem;
+}
+
+#roll {
+  margin-bottom: 2rem;
+  background: #333;
+  border: none;
+  padding: 0.5rem;
+  margin: 1.3rem;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  justify-content: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 0.5;
+  transition-duration: 0.5s;
+}
+
+#roll:hover {
+  background-color: rgb(34, 0, 255);
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+li {
+  list-style-type: none;
+}
